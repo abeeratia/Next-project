@@ -1,9 +1,10 @@
+import Home from "./home/page";
 
-export default function Home() {
+export default function project() {
   return (
     <>
     
-    <h2>Hello Next Project ................</h2>
+   <Home/>
     </>
   );
 }
