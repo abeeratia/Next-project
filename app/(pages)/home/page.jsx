@@ -5,6 +5,7 @@
 
 // SSG ===== Static Site Generation
 // ISR ====== Incremental Site Regenerate
+import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react'
 
@@ -33,16 +34,23 @@ async function Home() {
     <div>
       <div className="container">
         <div className="row">
-          {allData.map((pro)=>{   return     <div  className="col-md-3">
-              
+          {allData.map((pro)=>{   return (
+            <div className="col-md-3">
               <Link href={`/productdetails/${pro.id}`}>
-              
-              <img src={pro.imageCover} className="w-100" alt={pro.title} />
+                <Image
+                  width={300}
+                  className="w-100"
+                  height={400}
+                  src={pro.imageCover}
+                  alt=""
+                />
 
-              <h2>{pro.title}</h2>
+                {/* <img src={pro.imageCover} className="w-100" alt={pro.title} /> */}
+
+                <h2>{pro.title}</h2>
               </Link>
-              
-            </div>;
+            </div>
+          );
 
           })}
         </div>
