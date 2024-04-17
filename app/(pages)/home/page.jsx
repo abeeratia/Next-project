@@ -16,7 +16,7 @@ async function Home() {
      
  const res = await fetch("https://ecommerce.routemisr.com/api/v1/products",{
     next:{
-      revalidate: 10
+      revalidate: 10 
     }
  }
 );

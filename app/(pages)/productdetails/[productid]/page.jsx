@@ -2,6 +2,7 @@
 import React from "react";
 
 async function  ProductId({ params }) {
+  // useRouter
   console.log(params.productid);
 
  async  function getprodbyid() {
