@@ -1,7 +1,10 @@
 
+import { useSearchParams } from "next/navigation";
 import React from "react";
 
 async function  ProductId({ params }) {
+   const search =  useSearchParams()
+        console.log('search',search);
   // useRouter
   console.log(params.productid);
 
