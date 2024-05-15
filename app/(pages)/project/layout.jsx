@@ -8,7 +8,9 @@ function Projectlayout({ children }) {
         <div className="col-md-3">
           <Link href="/project/desktop">desktop</Link>
           <br/>
-          <Link href="/project/web">web</Link>
+          <Link href="/project/web?abeer=veg">web</Link>
+           <br/>
+          
         </div>
 
         <div className="col-md-9">{children}</div>

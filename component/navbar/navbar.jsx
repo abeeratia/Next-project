@@ -8,6 +8,7 @@ function Navbar() {
   const pathname = usePathname()
   console.log('pathname',pathname);
 
+
   return (
     <div>
       Navbar........................
@@ -17,6 +18,9 @@ function Navbar() {
       <br/>
       <Link  className={`link ${pathname === '/home' ? 'text-danger' : 'text-success'}`}style={{ color: "red" ,textDecoration:'none' }} href="/home">
         Home
+      </Link><br/>
+      <Link  className={`link ${pathname === '/cart' ? 'text-danger' : 'text-success'}`}style={{ color: "red" ,textDecoration:'none' }} href="/cart">
+        cart
       </Link>
       <br/>
       

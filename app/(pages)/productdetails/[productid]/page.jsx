@@ -1,10 +1,9 @@
-
+"use client";
 import { useSearchParams } from "next/navigation";
 import React from "react";
 
 async function  ProductId({ params }) {
-   const search =  useSearchParams()
-        console.log('search',search);
+   
   // useRouter
   console.log(params.productid);
 
@@ -26,6 +25,9 @@ async function  ProductId({ params }) {
       <div className="container">
         <div className="row">
           <div className="col-md-6">
+           
+        
+           
             <img src={result.imageCover} alt="" />
           </div>
         </div>
